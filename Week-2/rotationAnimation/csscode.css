@@ -1,0 +1,82 @@
+body {
+
+}
+#prim{
+
+  background-color: aqua;
+  text-align: center;
+  vertical-align: middle;
+
+  }
+#prim:hover > #square1{
+  transform: rotate(90deg) translate(0px, 100px);
+}
+#prim:hover > #square2{
+
+  transform: rotate(-90deg) translate(0px, 100px);
+}
+#prim:hover > #square3{
+
+  transform: rotate(-90deg) translate(0px, -100px);
+}
+#prim:hover > #square4{
+
+  transform: rotate(90deg) translate(0px, -100px);
+}
+#message{
+  position: absolute;
+  margin-left:275px;
+  margin-top:250px;
+  font-size: 2em;
+  vertical-align: middle;
+}
+#square1{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin-left: 200px;
+  margin-top: 175px;
+  background-color:red;
+  transition-property: transform;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+  visibility: visible;
+}
+#square2{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin-left: 300px;
+  margin-top: 175px;
+  background-color:yellow;
+  transition-property: transform;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+  visibility: visible;
+}
+
+#square3{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin-left: 200px;
+  margin-top: 275px;
+  background-color:blue;
+  transition-property: transform;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+  visibility: visible;
+  }
+
+#square4{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin-left: 300px;
+  margin-top: 275px;
+  background-color:green;
+  transition-property: transform;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+  visibility: visible;
+  }
