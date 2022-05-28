@@ -26,10 +26,7 @@ function createRandomTree(n, node) {
         } else {
           curr = curr.left;
         }
-      } else {
-        k >= curr.value;
-      }
-      {
+      } else if (k >= curr.value) {
         if (curr.right == null) {
           curr.right = new Node();
           curr = curr.right;
