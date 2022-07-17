@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    header {
+      float: left;
+      display: flex;
+      background-color: #3a3b3c;
+      padding-left: 25px;
+      width: 100vw;
+      text-align: left;
+
+      color: white;
+    }
+
+    nav {
+      position: absolute;
+      float: left;
+      width: 3em;
+      height:85vh;
+      background: #a9a9a9;
+      padding: 10px;
+    }
+    li button {
+
+      border: none;
+      outline: none;
+      background: none;
+
+    }
+    p button {
+      padding-left:2em;
+      border: none;
+      outline: none;
+      background: none;
+
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0px;
+    }
+
+    article {
+      float:center;
+      padding: 80px 10px;
+      width: 80vw;
+      background-color: #fff;
+      height: 200px;
+      text-align: center;
+    }
+    table {
+             border-collapse: collapse;
+             width: 100vw;
+         }
+    td {
+      width:90vw
+      float:center;
+      align: center;
+      padding: 10px;
+    }
+    tr {
+      padding-left: 40px;
+    }
+    tr:nth-child(even) {
+              background-color: #a9a9a9;
+          }
+    section:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 0px;
+      height:15vh;
+      width: 100vw;
+      background-color: #3971ac;
+      vertical-align: bottom;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+    li {
+
+      padding-top:4em;
+    }
+    .chartimg {
+      float: left;
+      padding: 2em;
+      width: 15vw;
+      height: 280px;
+    }
+    .fchartimg {
+      float: left;
+      padding-top:15px;
+      width: 15vw;
+      display: flex;
+      display: table-cell;
+      vertical-align: top;
+    }
+    .index{
+      padding-left: 8%
+    }
+    .charttext {
+      float: left;
+      padding: 120px;
+      width: 80vw;
+      height: 80px;
+      display: flex;
+      display: table-cell;
+      vertical-align: top;
+    }
+  </style>
+  <title>Catty Board</title>
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+<body>
+  <header>
+    <div class="chartimg"><img src="https://vif1g.csb.app/src/assets/cattyboard.jpg" height=150em width=150em></div>
+    <div class="charttext">
+      <H3>ChattyBoard Top 100 Single Charts (11.06.36)</H3>
+      <p id="artistName"> Unkown Artist </p>
+      <p id="detail">2016.Charts.100 songs</p>
+      <p>
+        <Button><i class="la la-play"></i></Button> Play all
+        <Button><i class="la la-plus"></i></Button> Add to
+        <Button><i class="la la-ellipsis-h"></i></Button> More
+      </P>
+    </div>
+  </header>
+  <section>
+    <nav>
+      <ul>
+        <li><Button><i class="la la-bars"></i></Button></li>
+        <li><Button><i class="la la-home"></i></Button></li>
+        <li><Button><i class="la la-search"></i></Button></li>
+        <li><Button><i class="la la-volume-up"></i></Button></li>
+        <li><Button><i class="la la-user"></i></Button></li>
+        <li><Button><i class="la la-spotify"></i></Button></li>
+        <li><Button><i class="la la-cog"></i></Button></li>
+        <li><Button><i class="la la-soundcloud"></i></Button></li>
+      </ul>
+    </nav>
+    <article>
+      <table id="playlist">
+        <tr>
+          <td class ="index">1</td>
+          <td>One Dance</td>
+          <td>Crake feat Catkid & Cyla</td>
+          <td>2:24</td>
+          <td><Button>CATTY CLOUD SYNC</Button></td>
+        </tr>
+        <tr>
+          <td class ="index">2</td>
+          <td>Panda</td>
+          <td>Cattee</td>
+          <td>4:06</td>
+          <td><Button>CATTY CLOUD SYNC</Button></td>
+        </tr>
+        <tr>
+          <td class ="index">3</td>
+          <td>Can't stop the Feeling!</td>
+          <td>Catin Climberlake</td>
+          <td>3:56</td>
+          <td><Button>CATTY CLOUD SYNC</Button></td>
+        </tr>
+        <tr>
+          <td class ="index">4</td>
+          <td>Work from Home</td>
+          <td>Cat Harmony feat Colla</td>
+          <td>3:34</td>
+          <td><Button>CATTY CLOUD SYNC</Button></td>
+        </tr>
+      </table>
+    </article>
+  </section>
+  <footer>
+    <div class="fchartimg">
+      <img src="https://vif1g.csb.app/src/assets/cattyboard.jpg" height=75em width=75em align: "left">
+    </div>
+    <p id="songName" align="left">If it ain't Love </p>
+    <p id="album" align="left">Catson Derulo</p>
+    <p align="right">
+      <Button><i class="la la-step-backward"></i></Button>
+      <Button><i class="la la-play"></i></Button>
+      <Button><i class="la la-step-forward"></i>
+      </Button> <Button><i class="la la-undo-alt"></i></Button>
+      <Button><i class="la la-random"></i></Button>
+    </p>
+  </footer>
+</body>
+</html>
